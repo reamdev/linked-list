@@ -15,7 +15,7 @@ public class LinkedList<T> {
 
     // Add node, this node added at the end
     public void add(T value) {
-        LinearNode<T> linearNode = new LinearNode<T>(value); // Create new node
+        LinearNode<T> linearNode = new LinearNode<>(value); // Create new node
 
         if(this.root == null) {
             this.root = linearNode;
@@ -32,7 +32,7 @@ public class LinkedList<T> {
 
     // Add node to beginning
     public void unShift(T value) {
-        LinearNode<T> linearNode = new LinearNode<T>(value);
+        LinearNode<T> linearNode = new LinearNode<>(value);
 
         if (this.root != null) {
             linearNode.next = this.root;
